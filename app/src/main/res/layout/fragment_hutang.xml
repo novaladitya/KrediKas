@@ -8,10 +8,9 @@
     tools:context="com.praktikumobile.kredikas.HutangFragment">
 
     <TextView
-        android:id="@+id/tv_category_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="INI FRAGMENT HUTANG"
         android:layout_marginBottom="16dp"
-        />
+    />
 </LinearLayout>
