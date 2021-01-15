@@ -13,11 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
-        android:elevation="12dp"
         app:tabIndicatorColor="@color/active_tab"
         app:tabIndicatorHeight="3dp"
         app:tabSelectedTextColor="@color/active_tab"
         app:tabTextColor="@color/inactive_tab"
+        app:tabTextAppearance="@style/TextSize"
     />
 
     <androidx.viewpager.widget.ViewPager

@@ -2,4 +2,21 @@
     <string name="app_name">KrediKas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tanggal">00</string>
+    <string name="bulan">Jan</string>
+    <string name="tahun">9999</string>
+    <string name="jenis">Pengeluaran</string>
+    <string name="jumlah">Rp. 1.000.000</string>
+    <string name="catatan">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="submit">submit</string>
+    <string name="delete">Hapus</string>
+    <string name="judulkas">Daftar Catatan Kas</string>
+    <string name="judulhutang">Daftar Catatan Hutang</string>
+    <string name="pemasukan">1000000</string>
+    <string name="judul_pemasukan">PEMASUKAN</string>
+    <string name="judul_pengeluaran">PENGELUARAN</string>
+    <string name="judul_jumlah">JUMLAH</string>
+    <string name="value_pemasukan">100000000000000000000000000000</string>
+    <string name="value_pengeluaran">10000000000000000000000000000000000000</string>
+    <string name="value_jumlah">10</string>
 </resources>

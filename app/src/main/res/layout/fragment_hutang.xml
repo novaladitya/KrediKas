@@ -3,20 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:id="@+id/ll_hutang"
     android:background="@color/colorAccent"
     tools:context="com.praktikumobile.kredikas.HutangFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="234dp"
-        android:background="@drawable/bg_shape"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_height="97dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:elevation="12dp">
+        android:layout_marginBottom="10dp"
+        android:paddingHorizontal="19dp"
+        android:background="@drawable/bg_shape"
+        android:elevation="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tanggal"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="Total Hutang"
+            />
+        <TextView
+            android:id="@+id/tv_totalHutang"
+            android:layout_width="0dip"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_card"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:text="@string/pemasukan"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -25,8 +49,51 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/bg_shape"
         android:elevation="12dp"
+        android:paddingHorizontal="0dp"
+        android:paddingBottom="18dp"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginStart="19dp"
+            android:text="@string/judulhutang"
+            />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false">
+            <ProgressBar
+                android:id="@+id/progressbar_htg"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:visibility="invisible"
+                app:layout_anchor="@id/rv_hutang"
+                app:layout_anchorGravity="center"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_hutang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/card_hutang"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_htg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:layout_anchor="@id/rv_hutang"
+                android:foregroundGravity="bottom"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|end"
+                app:srcCompat="@drawable/add"
+                android:backgroundTint="@color/colorPrimaryDark"
+                />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </LinearLayout>
 </LinearLayout>
